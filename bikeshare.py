@@ -155,12 +155,19 @@ def trip_duration_stats(df):
 
     print("The total travel time is {} days, {} hours, {} minutes and {} seconds!".format(int(total_travel_time_day),int(total_travel_time_hour),int(total_travel_time_minutes),int(total_travel_time_seconds)))
     # TO DO: display mean travel time
-	""" avg in this code means the average"""
+	""" avg in this code means the average
+	
+		d implies day
+		h implies hour
+		m implies minutes
+		s implies secondes
+	
+	"""
     avg_travel_time = df['Trip Duration'].mean()
-    avg_travel_time_day = avg_travel_time // 86400
-    avg_travel_time_hour = avg_travel_time % 86400 // 3600
-    avg_travel_time_minutes = (avg_travel_time - avg_travel_time_day * 86400 - avg_travel_time_hour * 3600) // 60
-    avg_travel_time_seconds = (avg_travel_time - avg_travel_time_day * 86400 - avg_travel_time_hour * 3600 - avg_travel_time_minutes*60)
+    avg_travel_time_d = avg_travel_time // 86400
+    avg_travel_time_h = avg_travel_time % 86400 // 3600
+    avg_travel_time_m = (avg_travel_time - avg_travel_time_d * 86400 - avg_travel_time_h * 3600) // 60
+    avg_travel_time_s = (avg_travel_time - avg_travel_time_d * 86400 - avg_travel_time_h * 3600 - avg_travel_time_m * 60)
     
     print("The average travel time is {} minutes and {} seconds!".format(int(avg_travel_time_minutes),int(avg_travel_time_seconds)))
 
