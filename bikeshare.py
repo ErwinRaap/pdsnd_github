@@ -8,7 +8,15 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def get_filters():
     """
+<<<<<<< HEAD
     Asks user to specify a city, month, and day to analyze and filter the data.
+||||||| parent of 673aa32 (Updating function documentation)
+    Asks user to specify a city, month, and day to analyze.
+=======
+	No inputs are needed. Results are used for other functions.
+	
+    Asks user to specify a city, month, and day to analyze.
+>>>>>>> 673aa32 (Updating function documentation)
 
     Returns:
         (str) city - name of the city to analyze
@@ -42,6 +50,8 @@ def get_filters():
 
 def load_data(city, month, day):
     """
+	Inputs for this function are the result of the get_filter() function.
+	
     Loads data for the specified city and filters by month and day if applicable.
 
     Args:
