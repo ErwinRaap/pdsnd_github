@@ -4,10 +4,10 @@
 This project is created on the 8th of August 2023
 
 ### Project Title
-Final Git Project (Bikeshare)
+Final Git Project (**Bikeshare**)
 
 ### Description
-This projects tracks descriptive data for three US cities: Chicago; New York City; and Washington. Based on inputs of the user, one can filter through descriptive bikeshare data of particular cities with the respective dates. 
+This projects tracks descriptive data for three US cities: _Chicago_; _New York City_; and _Washington_. Based on inputs of the user, one can filter through descriptive bikeshare data of particular cities with the respective dates. 
 
 ### Files used
 README.md
